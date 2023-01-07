@@ -33,7 +33,7 @@ nohup ./nginx-reload-from-nacos > ./run.log 2>&1 &
 ## 捐赠 Donation
 
 如果此项目对你有所帮助，不妨请我喝咖啡。
-If you find Nimrod useful, you can buy us a cup of coffee.
+If you find me useful, you can buy us a cup of coffee.
 
 [Paypal Me](https://www.paypal.me/godcheese)
 
