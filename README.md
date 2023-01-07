@@ -14,6 +14,6 @@ nohup ./nginx-reload-from-nacos > ./run.log 2>&1 &
 ```
 
 ### dev 开发
-- golang >= 1.19.3
-- Fedora >= 3.7
+- Dev/Compile in golang >= 1.19.3
+- Dev on Fedora >= 3.7
 - Compile on CentOS >= 7.9.2009
