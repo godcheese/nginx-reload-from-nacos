@@ -1,0 +1,33 @@
+
+# 企业微信通知配置
+we-work:
+  # 是否启用企业微信消息推送
+  enabled: false
+  url: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=testkey
+  # 消息配置
+  messages:
+    first-init-success: "[dev] 首次加载配置并重载 Nginx 成功."
+    nginx-reload-success: "[dev] 监听 [%s] Nginx 重载成功."
+    nginx-reload-error: "[dev] 监听 [%s] Nginx 重载失败.%s"
+
+# nginx 配置
+nginx:
+  nginx-bin: /usr/sbin/nginx
+  conf-path: ./conf
+
+# nacos 要监听的服务配置
+nacos:
+  discovery:
+    ip: 127.0.0.1
+    port: 8848
+    group-name: DEV_GROUP
+    namespace: dev-ns
+    subscribe-services:
+      - service-name: test01-service
+        nginx-server-name: test.com
+        nginx-port: 80
+        nginx-upstream-name: test01Service
+      - service-name: test02-service
+        nginx-server-name: test.com
+        nginx-port: 8082
+        nginx-upstream-name: test02Service
