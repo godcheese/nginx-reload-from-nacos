@@ -27,6 +27,7 @@ import (
 )
 
 var (
+	version              = "1.0.0"
 	firstInit            = true
 	configFile           string
 	config               *Config
