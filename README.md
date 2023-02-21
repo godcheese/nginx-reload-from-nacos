@@ -28,7 +28,7 @@ nohup ./nginx-reload-from-nacos > ./run.log 2>&1 &
 
 ## 反馈 Feedback
 
-[Issues](https://github.com/godcheese/nimrod/issues)
+[Issues](https://github.com/godcheese/nginx-reload-from-nacos/issues)
 
 ## 捐赠 Donation
 
